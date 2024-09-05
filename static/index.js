@@ -16,5 +16,5 @@ beginJourneyLink.addEventListener('click', (e)=> {
 
     setTimeout(()=> {
         window.location.href = "home.html";
-    }, 1000);
+    }, 1500);
 });

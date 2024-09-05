@@ -5,7 +5,7 @@
 
 /* Fade-out effect for the current page */
 .fade-out {
-    animation: fadeOut 1s ease-in-out forwards;
+    animation: fadeOut 2.5s ease-in-out forwards;
 }
 
 /* Define the fade-in keyframes */
