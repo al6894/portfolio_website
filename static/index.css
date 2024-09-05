@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=Cormorant+Unicase:wght@700&display=swap');
+/* Resets all browser defined paddings for cross-browser consistency*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color:#ADD8E6 ;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Possible to combine these with inheritance */
+.left_trees{
+    height: 100vh;
+    width: 50vw;
+}
+
+.left_trees img {
+    z-index: 1;
+    position: relative;
+}
+
+.right_trees{
+    height: 100vh;
+    width: 50vw;
+}
+
+.right_trees img {
+    z-index: 1;;
+    position: relative;
+}
+
+header {
+    font-size: 5em;
+    font-family: "Akshar", sans-serif;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+
+/* .begin-journey {
+    font-family: "Akshar", sans-serif;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    z-index: inherit;
+} */
+
+.begin-journey {
+    font-family: "Akshar", sans-serif;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    width: 200px; 
+    height: 200px; 
+    line-height: 200px; 
+    text-align: center;
+    background-color: rgba(115, 204, 255, 1); 
+    border: 2px solid rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
+    transition: background-color 0.3s, border-color 0.3s; 
+    display: block; 
+    z-index: inherit;
+}
+
+.begin-journey:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: inherit;
+}
+
+/* All left bound vegetation*/
+#tree1 {
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Aligns the image at the bottom-left corner of its container */
+    height: auto; /* Maintains aspect ratio */
+    width: 60vw; /* Adjust based on desired size */
+    z-index: 10;
+}
+
+#tree2 {
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Aligns the image at the bottom-left corner of its container */
+    height: 95vh; /* Maintains aspect ratio */
+    width: 60vw; /* Adjust based on desired size */ 
+    z-index: 2;
+}
+
+#bush4 {
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Aligns the image at the bottom-left corner of its container */
+    height: 500px; /* Maintains aspect ratio */
+    width: 30vw; /* Adjust based on desired size */ 
+    z-index: 9 
+}
+
+/* All right-bound vegetation*/
+#tree1b {
+    position: absolute;
+    right: 0;
+    bottom: 0; /* Aligns the image at the bottom-left corner of its container */
+    height: auto; /* Maintains aspect ratio */
+    width: 60vw; /* Adjust based on desired size */
+    z-index: 10;
+}
+
+#tree2b {
+    position: absolute;
+    right: 0;
+    bottom: 0; /* Aligns the image at the bottom-left corner of its container */
+    height: 95vh; /* Maintains aspect ratio */
+    width: 60vw; /* Adjust based on desired size */ 
+    z-index: 2;
+}
+
+#bush4b {
+    position: absolute;
+    right: 0;
+    bottom: 0; /* Aligns the image at the bottom-left corner of its container */
+    height: 500px; /* Maintains aspect ratio */
+    width: 30vw; /* Adjust based on desired size */ 
+    z-index: 9  
+}
+
+/* General images */
+#grass {
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: 2;
+    height: auto;
+    width: 100vw;
+}
+
+#hill1{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mountain{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+}
