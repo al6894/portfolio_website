@@ -1,10 +1,17 @@
-let tree1 = document.getElementById('tree1');
-let tree2 = document.getElementById('tree2');
+let left_trees = document.getElementById('left_trees');
+let right_trees = document.getElementById('right_trees');
 
-const beginJourneyLink = document.querySelectorAll('begin-journey');
+const beginJourneyLink = document.querySelector('.begin-journey');
 
 beginJourneyLink.addEventListener('click', (e)=> {
+    e.preventDefault();
+
     let value = e.clientX;
-    tree1.style.left = value * 1.5 + 'px';
-    tree2.style.left = value * -1.5 + 'px';
+
+    left_trees.style.transform = `translateX(${value * -1.9}px)`; // Adjust to smaller value for visible effect
+    right_trees.style.transform = `translateX(${value * 1.3}px)`; 
+
+    setTimeout(()=> {
+        window.location.href = "home.html";
+    }, 700);
 });
