@@ -10,23 +10,38 @@
 <body>
     <div class="container">
         <nav class="left-nav">
+            <a href="/templates/index.html" class="logo-button">
+                <img src="/static/icons/logo.svg" alt="Logo Icon">
+            </a>
+
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
+                <li><a href="https://github.com/al6894" class="svg-link" target="_blank">
+                    <img src="/static/icons/github.svg" alt="Github Icon">
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/andy-lee-nyu/" class="svg-link" target="_blank">
+                    <img src="/static/icons/linkedin.svg" alt="LinkedIn Icon">
+                </a></li>
+                <li><a href="/static/pdf/Andy_Lee_Resume.pdf" class="svg-link" target="_blank">
+                    <img src="/static/icons/resume.svg" alt="Resume Icon">
+                </a></li>
             </ul>
         </nav>
 
         <main class="content">
-            <h1>Welcome to the Middle Content</h1>
-            <p>This is where the main content will go.</p>
+            <h1 id="about">About Me</h1>
+            <p>Lorem Ipsum</p>
+
+            <h1 id="projects">Projects</h1>
+            <div class="project-container"></div>
+
+            <h1 id="contact">Contact Me</h1>
         </main>
 
         <nav class="right-nav">
             <ul>
-                <li><a href="#">Link A</a></li>
-                <li><a href="#">Link B</a></li>
-                <li><a href="#">Link C</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </div>
