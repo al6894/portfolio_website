@@ -16,33 +16,3 @@ body, html {
     height: 100%;
     padding-top: 350px;
 }
-
-.vertical-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.vertical-nav ul li {
-    margin: 10px 0;
-}
-
-.vertical-nav ul li a {
-    text-decoration: none;
-    font-size: 30px;
-    color: #ffffff;
-    padding: 6px 15px;
-    border-radius: 20px;
-    margin: 0 10px;
-    font-weight: 600;
-    transition: background-color 0.3s;
-}
-
-.vertical-nav ul li a:hover , 
-.vertical-nav a.active {
-    background: #ffffff;
-    color: #000000;
-}
