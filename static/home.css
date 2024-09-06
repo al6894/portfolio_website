@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=Cormorant+Unicase:wght@700&display=swap');
+
 /* Reset basic styles for cross-browser consistency */
 * {
     margin: 0;
@@ -5,20 +7,45 @@
     box-sizing: border-box;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 200px 3fr 200px; 
-    height: 100vh; 
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
 }
 
-.left-nav {
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh; 
+    flex-wrap: nowrap;
+}
+
+.left-nav, .right-nav {
+    width: 200px;
     background-color: #333;
     color: rgb(212, 134, 134);
     padding: 20px;
+    position: fixed;
+    top: 0;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+}
+
+/* Specific for left and right navs */
+.left-nav {
+    left: 0; 
+}
+
+.right-nav {
+    right: 0; 
 }
 
 .left-nav ul, .right-nav ul {
@@ -49,20 +76,23 @@
     height: auto;
 }
 
-.right-nav {
-    background-color: #333;
-    color: rgb(212, 134, 134);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-/* Middle content section */
+/* Center content area */
 .content {
+    flex-grow: 1;
+    margin-left: 200px; 
+    margin-right: 200px; 
     padding: 40px;
     background-color: #333;
-    overflow-y: auto; /* In case content overflows */
+    color: white;
+    overflow-y: auto; 
+    height: auto; 
+    box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.content::-webkit-scrollbar {
+    display: none;
 }
 
 h1 {
@@ -76,12 +106,12 @@ p {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr; /* Stack all columns on top of each other */
+    .left-nav, .right-nav {
+        display: none; 
     }
 
-    .left-nav, .right-nav {
-        display: none; /* Hide side navs on small screens */
+    .content {
+        margin: 0; 
     }
 }
 
@@ -100,5 +130,40 @@ p {
 }
 
 .svg-link:hover img {
-    stroke: #ff6347; /* Change color on hover */
+    stroke: #ff6347;
+}
+
+.p-text {
+    font-size: 5em;
+}
+
+.pbutton {
+    background-color: white;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Akshar' sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.pbutton:hover {
+    transform: scale(1.1); 
+}
+
+.sticky-partition {
+    top:0;
+    position: relative;
+    height: 500vh;
+}
+
+.project-container {
+    position: sticky;
+    top: 200px;
+    margin-bottom: 500px;
+    padding: 20px;
+    background-color: #333;
+    z-index: 10; 
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for visibility */
 }
