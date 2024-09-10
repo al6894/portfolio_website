@@ -1,76 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=Cormorant+Unicase:wght@700&display=swap');
 
-/* Reset basic styles for cross-browser consistency */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    overflow:hidden;
-    height: 100%;
-}
-
-body {
-    display: flex;
-    min-height: 100vh;
-    margin: 0;
-}
-
 .container {
     display: flex;
     width: 100vw;
-    height: 100vh; 
+    height: 100vh;
     flex-wrap: nowrap;
 }
 
+/* Navigation*/
 .left-nav, .right-nav {
-    width: 200px;
-    background-color: #333;
-    color: rgb(212, 134, 134);
-    padding: 20px;
     position: fixed;
-    top: 0;
+    top:0;
+    width: 150px;
+    background-color: #333;
     height: 100%;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.left-nav ul, .right-nav ul {
+    list-style: none;
 }
 
 /* Specific for left and right navs */
 .left-nav {
     left: 0; 
 }
+.left-nav li {
+    margin-bottom: 25px;
+}
 
 .right-nav {
     right: 0; 
-}
-
-.left-nav ul, .right-nav ul {
-    list-style: none;
+    z-index: 13;
 }
 .right-nav ul {
     margin-top: 40px;
 }
-
-.left-nav li, .right-nav li {
-    margin-bottom: 15px;
-}
-
-.left-nav a, .right-nav a {
-    color: white;
+.right-nav a {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--blue);
     text-decoration: none;
-}
-
-.logo-button {
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.logo-button img {
-    width: 60px;
-    height: auto;
 }
 
 /* Center content area */
@@ -82,75 +55,34 @@ body {
     background-color: #333;
     color: white;
     overflow-y: auto; 
-    height: auto; 
     box-sizing: border-box;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    z-index: 12;
 }
 
-.content::-webkit-scrollbar {
-    display: none;
+.bottom-items {
+    position: absolute;
+    bottom: 100px; /* Distance from the bottom of the container */
 }
-
-h1 {
-    font-family: 'Akshar' sans-serif;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.2em;
-}
-
-/* Responsive design for smaller screens */
-/* @media (max-width: 768px) {
-    .left-nav, .right-nav {
-        display: none; 
-    }
-
-    .content {
-        margin: 0; 
-    }
-} */
-
 .svg-link {
     display: inline-block;
     padding: 10px;
-    text-decoration: none;
 }
-
 .svg-link img{
     width: 50px;
     height: 50px;
-    fill: none;
-    stroke: #333;
-    transition: stroke 0.3s ease;
 }
-
-.svg-link:hover img {
-    stroke: #ff6347;
-}
-
-.p-text {
-    font-family: 'Cormorant', sans-serif;
-    font-size: 5em;
-}
-
 .pbutton {
     background-color: white;
     padding: 8px 10px;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Akshar' sans-serif;
-    cursor: pointer;
+    font-family: var(--secondary-font);
     transition: transform 0.3s ease;
-    border-radius: 20px;
+    border-radius: 14px;
 }
-
 .pbutton:hover {
     transform: scale(1.1); 
 }
-
 .sticky-partition {
     position: relative;
     height: 400vh; 
@@ -158,28 +90,30 @@ p {
     flex-direction: column;
     justify-content: flex-start;
 }
-
 .project-container {
     position: sticky;
-    top: 200px;
-    margin-bottom: 500px;
+    top: 100px;
     padding: 20px;
     background-color: #333;
     z-index: 10; 
-    transition: opacity 0.5s ease-in-out; 
+    transition: opacity 0.5s ease-out; 
 }
 
-.partition {
-    height: 100vh;
+/* Text */
+.content section h2 {
+    font-family: var(--secondary-font);
+    font-size: 2em;
 }
-
-#home {
-    width:50px;
-    height: 50px;
-}
-
-.right-nav a.right-item {
-    text-decoration: none;
-    font-family: 'Cormorant', sans-serif;
+.content section h3 {
+    font-family: var(--primary-font);
+    font-size: 4em;
     font-weight: 700;
+    color: var(--blue);
+}
+.style1 {
+    font-family: var(--primary-font);
+    font-size: 3em;
+}
+.style2 {
+    font-size: 1.2em;
 }

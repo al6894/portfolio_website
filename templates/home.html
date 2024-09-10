@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy's Portfolio</title>
+    <link rel="stylesheet" href="/static/globals.css">
     <link rel="stylesheet" href="/static/home.css">
     <link rel="stylesheet" href="/static/fade.css">
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap" rel="stylesheet">
@@ -12,11 +13,7 @@
 <body>
     <div class="container">
         <nav class="left-nav">
-            <a href="/templates/index.html" class="logo-button">
-                <img src="/static/icons/home.svg" id="home" alt="Logo Icon">
-            </a>
-
-            <ul>
+            <ul class="bottom-items">
                 <li><a href="https://github.com/al6894" class="svg-link" target="_blank">
                     <img src="/static/icons/github.svg" alt="Github Icon">
                 </a></li>
@@ -30,77 +27,73 @@
         </nav>
 
         <main class="content">
-            <section class="partition">
-                <h1 id="about">About Me</h1>
-                <p class="p-text">I am a student attending New York University's school of engineering. 
+            <section id="about">
+                <h2>about me</h2>
+                <p class="style1">I am a student attending New York University's school of engineering. 
                     I am looking for growth opportunities to gain knowledge and experience in software development.
                 </p>
             </section>
 
-            <section class="partition">
-                <h1 id="passions">Passions</h1>
-                <section class="scrolling-section">
-                    <div class="scrolling-text">
-                        BASKETBALL. CATS. UI/UX DESIGN. NEW MUSIC. COOKING. WALKS. GYM. HIKING. DOGS. VIDEO GAMES. RUNNING. SUNSETS. WEB DEVELOPMENT.
+            <section id="passions">
+                <h2>Passions</h2>
+            </section>
+            
+            <section id="projects">
+                <h2 id="projects">Projects</h2>
+                <section class="sticky-partition">
+                    <div class="project-container">
+                        <h3>FlightHub</h3>
+                        <button class="pbutton">Github</button>
+                        <button class="pbutton">Documentation</button>
+                        <button class="pbutton">Schema</button>
+                        <p class="style2"> More info about FlightHub...</p>
+                    </div>
+
+                    <div class="project-container">
+                        <h3>TuneTalk</h3>
+                        <button class="pbutton">Github</button>
+                        <button class="pbutton">Documentation</button>
+                        <button class="pbutton">Schema</button>
+                        <p class="style2">More info about TuneTalk...</p>
+                    </div>
+
+
+                    <div class="project-container">
+                        <h3>Qommute</h3>
+                        <button class="pbutton">Github</button>
+                        <button class="pbutton">Documentation</button>
+                        <button class="pbutton">Schema</button>
+                        <p class="style2">More info about Qommute...</p>
+                    </div>
+
+                    <div class="project-container">
+                        <h3>Credit Risk</h3>
+                        <button class="pbutton">Github</button>
+                        <button class="pbutton">Documentation</button>
+                        <button class="pbutton">Schema</button>
+                        <p class="style2">More info about CreditRisk...</p>
+                    </div>
+
+                    <div class="project-container">
+                        <h3>Portfolio</h3>
+                        <button class="pbutton">Github</button>
+                        <button class="pbutton">Documentation</button>
+                        <button class="pbutton">Schema</button>
+                        <p class="style2">More info about Porfolio...</p>
                     </div>
                 </section>
             </section>
-            
-            <h1 id="projects">Projects</h1>
-            <section class="sticky-partition">
-                <div class="project-container">
-                    <h2>FlightHub</h2>
-                    <button class="pbutton">Github</button>
-                    <button class="pbutton">Documentation</button>
-                    <button class="pbutton">Schema</button>
-                    <p> More info about FlightHub...</p>
-                </div>
 
-                <div class="project-container">
-                    <h2>TuneTalk</h2>
-                    <button class="pbutton">Github</button>
-                    <button class="pbutton">Documentation</button>
-                    <button class="pbutton">Schema</button>
-                    <p>More info about TuneTalk...</p>
-                </div>
-
-
-                <div class="project-container">
-                    <h2>Qommute</h2>
-                    <button class="pbutton">Github</button>
-                    <button class="pbutton">Documentation</button>
-                    <button class="pbutton">Schema</button>
-                    <p>More info about Qommute...</p>
-                </div>
-
-                <div class="project-container">
-                    <h2>Credit Risk</h2>
-                    <button class="pbutton">Github</button>
-                    <button class="pbutton">Documentation</button>
-                    <button class="pbutton">Schema</button>
-                    <p>More info about CreditRisk...</p>
-                </div>
-
-                <div class="project-container">
-                    <h2>Portfolio</h2>
-                    <button class="pbutton">Github</button>
-                    <button class="pbutton">Documentation</button>
-                    <button class="pbutton">Schema</button>
-                    <p>More info about Porfolio...</p>
-                </div>
-            </section>
-
-            <section class="partition">
-                <h1 id="contact">Contact Me</h1>
-                <p>Feel free to reach out and connect with me.</p>
+            <section id="contact">
+                <h2>Reach out to me!</h2>
             </section>
         </main>
 
         <nav class="right-nav">
             <ul>
-                <li><a href="#about" class="right-item">ABOUT</a></li>
-                <li><a href="#projects" class="right-item">PROJECTS</a></li>
-                <li><a href="#contact" class="right-item">CONTACT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </div> 
