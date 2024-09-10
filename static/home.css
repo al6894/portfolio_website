@@ -74,6 +74,7 @@
 .pbutton {
     background-color: white;
     padding: 8px 10px;
+    margin-right: 6px;
     font-size: 16px;
     font-weight: bold;
     font-family: var(--secondary-font);
@@ -92,8 +93,10 @@
 }
 .project-container {
     position: sticky;
+    height: 100vh;
     top: 100px;
-    padding: 20px;
+    margin-bottom: 200px;
+    /* background: linear-gradient(to bottom, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0)) #333; */
     background-color: #333;
     z-index: 10; 
     transition: opacity 0.5s ease-out; 
@@ -113,7 +116,9 @@
 .style1 {
     font-family: var(--primary-font);
     font-size: 3em;
+    max-width: 1200px;
 }
 .style2 {
-    font-size: 1.2em;
+    font-size: 2em;
+    max-width: 1000px;
 }
