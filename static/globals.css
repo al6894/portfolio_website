@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=Cormorant+Unicase:wght@700&display=swap');
 :root {
-  --blue: #b6e4ff;
+  --blue: #2c7d96;
+  /* #b6e4ff; */
   /* --black-one: #161616; */
-  --black-one: #5da8ff;
+  --black-one: #ADD8E6;
   --black-two: #2e2e2e;
   --white-one: #d9d9d9;
   --white-two: #ebebeb;
@@ -53,9 +54,9 @@ a{
   position: absolute;
   width: 20px; 
   height: 20px;
-  border: 2px solid rgb(255, 255, 255); 
+  border: 2px solid rgb(0, 0, 0, 0.7); 
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7); /* Slight transparency for better effect */
+  background-color: rgb(255, 255, 255); /* Slight transparency for better effect */
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: transform 0.2s ease-out, background-color 0.3s ease; /* Slightly longer transition */

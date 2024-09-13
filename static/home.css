@@ -1,28 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=Cormorant+Unicase:wght@700&display=swap');
-
+html, body {
+    height: 100%;
+    margin: 0;
+}
 .container {
     display: flex;
     width: 100vw;
     height: 100vh;
     flex-wrap: nowrap;
 }
-
 /* Navigation*/
 .left-nav, .right-nav {
     position: fixed;
-    top:0;
     width: 150px;
-    background-color: var(--black-one);
     height: 100%;
+    background-color: var(--black-one);
     padding: 50px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     justify-content: space-between;
+    pointer-events: auto;
 }
-.left-nav ul, .right-nav ul {
-    list-style: none;
-}
-
 /* Specific for left and right navs */
 .left-nav {
     left: 0; 
@@ -30,7 +28,6 @@
 .left-nav li {
     margin-bottom: 25px;
 }
-
 .right-nav {
     right: 0; 
     z-index: 13;
@@ -39,13 +36,16 @@
     margin-top: 40px;
 }
 .right-nav a {
+    display: inline-block;
     font-family: var(--primary-font);
     font-size: 1.2em;
     font-weight: 700;
     color: var(--blue);
     text-decoration: none;
 }
-
+.right-nav a:hover {
+    transform: scale(1.2);
+}
 /* Center content area */
 .content {
     flex-grow: 1;
@@ -58,7 +58,6 @@
     box-sizing: border-box;
     z-index: 12;
 }
-
 .bottom-items {
     position: absolute;
     bottom: 100px; /* Distance from the bottom of the container */
@@ -69,10 +68,9 @@
     width: 50px;
     height: 50px;
 }
-/* .svg-link img{
-    width: 50px;
-    height: 50px;
-} */
+.svg-link:hover {
+    transform: scale(1.2);
+}
 .pbutton {
     background-color: white;
     padding: 8px 10px;
@@ -98,7 +96,6 @@
     height: 100vh;
     top: 100px;
     margin-bottom: 200px;
-    /* background: linear-gradient(to bottom, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0)) #333; */
     background-color: var(--black-one);
     z-index: 10; 
     transition: opacity 0.5s ease-out; 
@@ -141,8 +138,14 @@
     margin-top: 0;
     margin-bottom: 550px;
 }
-#home-icon img{
+.home-icon {
     display: inline-block;
     height:100px;
     width: 100px;
+    z-index: 15;
+}
+
+.home-icon:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
