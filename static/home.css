@@ -12,7 +12,7 @@
     position: fixed;
     top:0;
     width: 150px;
-    background-color: #333;
+    background-color: var(--black-one);
     height: 100%;
     padding: 50px;
     display: flex;
@@ -52,7 +52,7 @@
     margin-left: 200px; 
     margin-right: 200px; 
     padding: 40px;
-    background-color: #333;
+    background-color: var(--black-one);
     color: white;
     overflow-y: auto; 
     box-sizing: border-box;
@@ -66,11 +66,13 @@
 .svg-link {
     display: inline-block;
     padding: 10px;
-}
-.svg-link img{
     width: 50px;
     height: 50px;
 }
+/* .svg-link img{
+    width: 50px;
+    height: 50px;
+} */
 .pbutton {
     background-color: white;
     padding: 8px 10px;
@@ -97,7 +99,7 @@
     top: 100px;
     margin-bottom: 200px;
     /* background: linear-gradient(to bottom, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0)) #333; */
-    background-color: #333;
+    background-color: var(--black-one);
     z-index: 10; 
     transition: opacity 0.5s ease-out; 
 }
@@ -119,6 +121,28 @@
     max-width: 1200px;
 }
 .style2 {
-    font-size: 2em;
+    font-size: 1.4em;
     max-width: 1000px;
+}
+#about1 {
+    scroll-margin-top: 350px;
+}
+.content section h2.name {
+    font-family: var(--primary-font);
+    font-size: 9em;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 0;
+}
+.content section h3.jobTitle {
+    font-family: var(--secondary-font);
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 550px;
+}
+#home-icon img{
+    display: inline-block;
+    height:100px;
+    width: 100px;
 }

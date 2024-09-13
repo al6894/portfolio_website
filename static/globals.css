@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=Cormorant+Unicase:wght@700&display=swap');
 :root {
-  --blue: #2179aa;
-  --black-one: #161616;
+  --blue: #b6e4ff;
+  /* --black-one: #161616; */
+  --black-one: #5da8ff;
   --black-two: #2e2e2e;
   --white-one: #d9d9d9;
   --white-two: #ebebeb;
@@ -25,6 +26,7 @@ body {
   margin: 0;
   background-color: var(--black-one);
   overflow: hidden;
+  cursor:none;
 }
 body.active{
   overflow-y: visible;
@@ -42,22 +44,26 @@ a{
   text-decoration: none;
   cursor: none;
 }
-#cursor {
-  pointer-events: none;
-  position: fixed;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: var(--white-two);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 0.2s;
-  mix-blend-mode: difference;
-  z-index: 999;
-}
-#cursor.difference{
-  mix-blend-mode: normal;
-}
 ::-webkit-scrollbar {
   width: 0rem;
   height: 0rem;
+}
+ /* Create the circle cursor */
+ .circle-cursor {
+  position: absolute;
+  width: 20px; 
+  height: 20px;
+  border: 2px solid rgb(255, 255, 255); 
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7); /* Slight transparency for better effect */
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-out, background-color 0.3s ease; /* Slightly longer transition */
+  z-index: 1000;
+  will-change: transform, left, top;
+}
+
+/* Optional: Change the cursor color on hover */
+a:hover ~ .circle-cursor {
+  background-color: rgba(0, 0, 0, 0.1);
 }

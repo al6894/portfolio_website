@@ -11,23 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="circle-cursor" id="circleCursor"></div>
     <div class="container">
         <nav class="left-nav">
+            <ul>
+                <li><a href="/templates/index.html">
+                    <img src="/static/icons/bird2.svg" class="home-icon" alt="Bird Icon">
+                </a></li>
+            </ul>
             <ul class="bottom-items">
-                <li><a href="https://github.com/al6894" class="svg-link" target="_blank">
-                    <img src="/static/icons/github.svg" alt="Github Icon">
+                <li><a href="https://github.com/al6894" target="_blank">
+                    <img src="/static/icons/github.svg" class="svg-link" alt="Github Icon">
                 </a></li>
-                <li><a href="https://www.linkedin.com/in/andy-lee-nyu/" class="svg-link" target="_blank">
-                    <img src="/static/icons/linkedin.svg" alt="LinkedIn Icon">
+                <li><a href="https://www.linkedin.com/in/andy-lee-nyu/" target="_blank">
+                    <img src="/static/icons/linkedin.svg" class="svg-link" alt="LinkedIn Icon">
                 </a></li>
-                <li><a href="/static/pdf/Andy_Lee_Resume.pdf" class="svg-link" target="_blank">
-                    <img src="/static/icons/resume.svg" alt="Resume Icon">
+                <li><a href="/static/pdf/Andy_Lee_Resume.pdf" target="_blank">
+                    <img src="/static/icons/resume.svg" class="svg-link" alt="Resume Icon">
                 </a></li>
             </ul>
         </nav>
 
         <main class="content">
-            <section id="about">
+            <section id="about1">
+                <h2 class="name">ANDY</h2>
+                <h3 class="jobTitle">Software Engineer</h3>
+            </section>
+            <section id="about2">
                 <h2>about me</h2>
                 <p class="style1">I am a student attending New York University's school of engineering. 
                     I am looking for growth opportunities to gain knowledge and experience in software development.
@@ -91,11 +101,12 @@
 
         <nav class="right-nav">
             <ul>
-                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#about1">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </div> 
+    <script src="/static/cursor.js"></script>
 </body>
 </html>
