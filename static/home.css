@@ -94,7 +94,7 @@ html, body {
 .project-container {
     position: sticky;
     height: 100vh;
-    top: 100px;
+    top: 180px;
     margin-bottom: 200px;
     background-color: var(--black-one);
     z-index: 10; 
@@ -105,17 +105,21 @@ html, body {
 .content section h2 {
     font-family: var(--secondary-font);
     font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .content section h3 {
     font-family: var(--primary-font);
     font-size: 4em;
     font-weight: 700;
     color: var(--blue);
+    margin-top: 0;
 }
 .style1 {
     font-family: var(--primary-font);
     font-size: 3em;
     max-width: 1200px;
+    margin-top: 0;
 }
 .style2 {
     font-size: 1.4em;
@@ -144,8 +148,37 @@ html, body {
     width: 100px;
     z-index: 15;
 }
-
 .home-icon:hover{
     transform: scale(1.2);
     transition: transform 0.3s ease;
+}
+.project-title {
+    margin-bottom: 0;
+}
+.tech-stack {
+    margin-top: 0;
+    font-size: 1.2em;
+    color:rgba(0, 0, 0, 0.541);
+}
+.passionsScroll {
+    width: 90rem;
+    font-family: var(--primary-font);
+    font-size: 8rem;
+    color: var(--blue);
+    overflow: hidden;
+    white-space: nowrap;
+}
+.aboutThreeLineOne,
+.aboutThreeLineTwo,
+.aboutThreeLineThree,
+.aboutThreeLineFour {
+    transition: transform 0.1s ease-out;
+    display: block;
+    white-space: nowrap; /* Prevent line wrapping */
+}
+#about2 {
+    margin-bottom: 500px;
+}
+#passions {
+    margin-bottom: 500px;
 }
