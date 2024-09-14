@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=Cormorant+Unicase:wght@700&display=swap');
+:root {
+  --blue: #2c7d96;
+  /* #b6e4ff; */
+  /* --black-one: #161616; */
+  --black-one: #ADD8E6;
+  --black-two: #2e2e2e;
+  --white-one: #d9d9d9;
+  --white-two: #ebebeb;
+
+  --primary-font: "Akshar", sans-serif;
+  --secondary-font: "Cormorant Unicase", sans-serif;
+  
+  font-weight: 800;
+}
+/* {
+  resets
+  layout/display
+  font/tyography
+  colors/background
+  effects/animations
+  responsiveness
+  misc
+} */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--black-one);
+  overflow: hidden;
+  cursor:none;
+}
+body.active{
+  overflow-y: visible;
+}
+button{
+  cursor: none;
+  border: none;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  cursor: none;
+}
+::-webkit-scrollbar {
+  width: 0rem;
+  height: 0rem;
+}
+ /* Create the circle cursor */
+ .circle-cursor {
+  position: absolute;
+  width: 20px; 
+  height: 20px;
+  border: 2px solid rgb(0, 0, 0, 0.7); 
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255); /* Slight transparency for better effect */
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-out, background-color 0.3s ease; /* Slightly longer transition */
+  z-index: 1000;
+  will-change: transform, left, top;
+}
+
+/* Optional: Change the cursor color on hover */
+a:hover ~ .circle-cursor {
+  background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=Cormorant+Unicase:wght@700&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: nowrap;
+}
+/* Navigation*/
+.left-nav, .right-nav {
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background-color: var(--black-one);
+    padding: 50px;
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: space-between;
+    pointer-events: auto;
+}
+/* Specific for left and right navs */
+.left-nav {
+    left: 0; 
+}
+.left-nav li {
+    margin-bottom: 25px;
+}
+.right-nav {
+    right: 0; 
+    z-index: 13;
+}
+.right-nav ul {
+    margin-top: 40px;
+}
+.right-nav a {
+    display: inline-block;
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--blue);
+    text-decoration: none;
+}
+.right-nav a:hover {
+    transform: scale(1.2);
+}
+/* Center content area */
+.content {
+    flex-grow: 1;
+    margin-left: 200px; 
+    margin-right: 200px; 
+    padding: 40px;
+    background-color: var(--black-one);
+    color: white;
+    overflow-y: auto; 
+    box-sizing: border-box;
+    z-index: 12;
+}
+.bottom-items {
+    position: absolute;
+    bottom: 100px; /* Distance from the bottom of the container */
+}
+.svg-link {
+    display: inline-block;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+.svg-link:hover {
+    transform: scale(1.2);
+}
+.pbutton {
+    background-color: white;
+    padding: 8px 10px;
+    margin-right: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--secondary-font);
+    transition: transform 0.3s ease;
+    border-radius: 14px;
+}
+.pbutton:hover {
+    transform: scale(1.1); 
+}
+.sticky-partition {
+    position: relative;
+    height: 400vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.project-container {
+    position: sticky;
+    height: 100vh;
+    top: 180px;
+    margin-bottom: 200px;
+    background-color: var(--black-one);
+    z-index: 10; 
+    transition: opacity 0.5s ease-out; 
+}
+
+/* Text */
+.content section h2 {
+    font-family: var(--secondary-font);
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.content section h3 {
+    font-family: var(--primary-font);
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--blue);
+    margin-top: 0;
+}
+.style1 {
+    font-family: var(--primary-font);
+    font-size: 3em;
+    max-width: 1200px;
+    margin-top: 0;
+}
+.style2 {
+    font-size: 1.4em;
+    max-width: 1000px;
+}
+#about1 {
+    scroll-margin-top: 350px;
+}
+.content section h2.name {
+    font-family: var(--primary-font);
+    font-size: 9em;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 0;
+}
+.content section h3.jobTitle {
+    font-family: var(--secondary-font);
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 550px;
+}
+.home-icon {
+    display: inline-block;
+    height:100px;
+    width: 100px;
+    z-index: 15;
+}
+.home-icon:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.project-title {
+    margin-bottom: 0;
+}
+.tech-stack {
+    margin-top: 0;
+    font-size: 1.2em;
+    color:rgba(0, 0, 0, 0.541);
+}
+.passionsScroll {
+    width: 90rem;
+    font-family: var(--primary-font);
+    font-size: 8rem;
+    color: var(--blue);
+    overflow: hidden;
+    white-space: nowrap;
+}
+.aboutThreeLineOne,
+.aboutThreeLineTwo,
+.aboutThreeLineThree,
+.aboutThreeLineFour {
+    transition: transform 0.1s ease-out;
+    display: block;
+    white-space: nowrap; /* Prevent line wrapping */
+}
+#about2 {
+    margin-bottom: 500px;
+}
+#passions {
+    margin-bottom: 500px;
+}
