@@ -117,14 +117,20 @@ html, body {
 }
 .style1 {
     font-family: var(--primary-font);
-    font-size: 3em;
-    max-width: 1200px;
+    font-size: 5rem;
+    max-width: 80vw;
     margin-top: 0;
+    color: var(--blue);
 }
 .style2 {
-    font-size: 1.4em;
-    max-width: 1000px;
+    font-family: var(--primary-font);
+    color: rgb(66, 62, 62);
+    font-size: 2rem;
+    margin-top:2rem;
+    width: 60vw;
+    font-weight: 400;
 }
+
 #about1 {
     scroll-margin-top: 350px;
 }
