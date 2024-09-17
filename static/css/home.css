@@ -16,8 +16,6 @@ html, body {
     height: 100%;
     background-color: var(--black-one);
     padding: 50px;
-    /* display: flex;
-    flex-direction: column; */
     justify-content: space-between;
     pointer-events: auto;
 }
@@ -134,20 +132,42 @@ html, body {
 #about1 {
     scroll-margin-top: 350px;
 }
+/* Keyframe for the animation */
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px); /* Start 100px below the final position */
+        opacity: 0; /* Start with invisible text */
+    }
+    100% {
+        transform: translateY(0); /* End at the natural position */
+        opacity: 1; /* Fully visible text */
+    }
+}
+
+/* Apply animation to the h2 (name) */
 .content section h2.name {
     font-family: var(--primary-font);
     font-size: 9em;
     text-align: center;
     margin-top: 300px;
     margin-bottom: 0;
+    
+    /* Add animation */
+    animation: slideUp 1s ease-out forwards; /* 1 second duration */
 }
+
+/* Apply animation to the h3 (job title) */
 .content section h3.jobTitle {
     font-family: var(--secondary-font);
     font-size: 3em;
     text-align: center;
     margin-top: 0;
     margin-bottom: 550px;
+
+    /* Add animation with delay for staggered effect */
+    animation: slideUp 1s ease-out forwards;
 }
+
 .home-icon {
     display: inline-block;
     height:100px;
@@ -187,4 +207,49 @@ html, body {
 }
 #passions {
     margin-bottom: 500px;
+}
+#end-message {
+    font-size: 4rem;
+}
+/* General styling */
+#contact-section {
+    text-align: left;
+    padding: 40px;
+    background-color: #101010; /* Dark background */
+}
+
+#contact-section h2 {
+    font-size: 5rem;
+    color: #2a87c9; /* Blue color */
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 1rem;
+    color: #ffffff; /* Lighter grey */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Contact links */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact-btn {
+    font-size: 2rem;
+    color: var(--blue); /* Blue color for text */
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 50px;
+    width: 30vw;
+    transition: background-color 0.3s, color 0.3s;
+}
+.contact-btn:hover {
+    background-color: var(--blue); /* Blue background on hover */
+    color: #fff; /* White text on hover */
 }
