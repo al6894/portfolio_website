@@ -1,14 +1,10 @@
-/* Fade-in effect for the new page */
 .fade-in {
-    animation: fadeIn 1s ease-in-out forwards;
+    animation: fadeIn 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; 
 }
-
-/* Fade-out effect for the current page */
 .fade-out {
-    animation: fadeOut 2.5s ease-in-out forwards;
+    animation: fadeOut 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
-/* Define the fade-in keyframes */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -18,7 +14,6 @@
     }
 }
 
-/* Define the fade-out keyframes */
 @keyframes fadeOut {
     from {
         opacity: 1;
